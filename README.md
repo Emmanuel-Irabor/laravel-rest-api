@@ -90,3 +90,4 @@ SHOW TABLES;
 | users                  |
 +------------------------+
 ```
+- Now we are all setup!
