@@ -68,7 +68,25 @@ DB_DATABASE=estate_intel
 DB_USERNAME=root
 DB_PASSWORD=
 ```
-- Type the following command to make migrations
+- Go terminal and navigate to project directory then type the following command to make migrations
 ```
 php artisan migrate
+```
+- Now go back to XAMPP shell and execute the following SQL query to see that the books table was properly created.
+```
+USE estate_intel;
+SHOW TABLES;
+```
+- You should see the following;
+```
++------------------------+
+| Tables_in_estate_intel |
++------------------------+
+| books                  |
+| failed_jobs            |
+| migrations             |
+| password_resets        |
+| personal_access_tokens |
+| users                  |
++------------------------+
 ```
