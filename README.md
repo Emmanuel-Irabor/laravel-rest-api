@@ -45,4 +45,30 @@ You should see the following message on the terminal
 Now visit http://127.0.0.1:8000 on your browser and confirm you see the laravel homepage.
 
 ## Database Setup
-
+Since we are making use of XAMPP, we would use the MYSQL database installed with xampp.
+- Open the xampp control panel, ensure that mysql is running as a service and on port 3306
+- Open XAMPP shell and type the following command to login to mysql server. (Note: we are able to login without a password because the password is empty by default. You can change the password later)
+```
+mysql -u root
+```
+- At this point you should be logged in to MySQL server. Now type the following SQL query to Create estate_intel database and press enter
+```
+CREATE DATABASE estate_intel;
+```
+- Type the following SQL query to see the database that was just created
+```
+SHOW DATABASES;
+```
+- Edit the .env file in your project directory and replace the DATABASE CONFIGURATION with the following
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=estate_intel
+DB_USERNAME=root
+DB_PASSWORD=
+```
+- Type the following command to make migrations
+```
+php artisan migrate
+```
