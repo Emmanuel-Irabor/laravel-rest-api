@@ -121,6 +121,7 @@ Laravel makes it very easy for us to run our tests through the terminal. Keep in
 ```
 php artisan test
 ```
+- Ensure you have created at least 2 records in the database before running the test
 - You should see the result as shown in the image below;
 - For simplicity, we are checking the status if all API endpoints are working properly and return successful responses.
 ![image](https://user-images.githubusercontent.com/75018175/200349023-eb8c9f48-d532-4093-88b7-21ce2b3cfc01.png)
