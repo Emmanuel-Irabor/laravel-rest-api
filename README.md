@@ -45,7 +45,7 @@ You should see the following message on the terminal
 Now visit http://127.0.0.1:8000 on your browser and confirm you see the laravel homepage.
 
 ## Database Setup
-Since we are making use of XAMPP, we would use the MYSQL database installed with xampp.
+Since we are making use of XAMPP, we would use the MySQL database installed with xampp.
 - Open the xampp control panel, ensure that mysql is running as a service and on port 3306
 - Open XAMPP shell and type the following command to login to mysql server. (Note: we are able to login without a password because the password is empty by default. You can change the password later)
 ```
