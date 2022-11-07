@@ -29,7 +29,7 @@ class BookManagement{
     public function show($id){
         $book = null;
         DB::transaction(function () use(&$book, $id) {
-            $book = $this->bookRepository->getById($id);
+            $book = $this->bookRepository->getBookById($id);
             $book = new BookResource($book);
         });
         return $book;

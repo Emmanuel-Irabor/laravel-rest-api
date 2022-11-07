@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +19,18 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::group(['prefix' => '/v1'], function(){
+    Route::get('/books', [BookController::class, 'index']);
+
+    Route::get('/books/{id}', [BookController::class, 'show']);
+
+    Route::post('/books', [BookController::class, 'create']);
+
+    Route::patch('/books/{id}', [BookController::class, 'update']);
+
+    Route::delete('/books/{id}', [BookController::class, 'delete']);
+
+    Route::post('/books/{id}', [BookController::class, 'delete']);
+
+    Route::get('/external-books', [BookController::class, 'externalBook']);
+});

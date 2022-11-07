@@ -23,7 +23,7 @@ class BookRepository extends BaseRepository implements BookRepositoryInterface{
         return $this->model->all();
     }
 
-    public function getById(string $id): Books
+    public function getBookById(string $id): Books
     {
         return $this->model->findOrFail($id);
     }

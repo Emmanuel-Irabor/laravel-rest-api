@@ -9,7 +9,7 @@ interface BookRepositoryInterface {
 
     public function index();
 
-    public function getById(string $id): Books;
+    public function getBookById(string $id): Books;
 
     public function update(array $data, string $id): Books;
 
