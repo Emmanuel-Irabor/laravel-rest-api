@@ -17,22 +17,15 @@ Go to https://getcomposer.org/download
 - On Windows, download and run the installer
 - On Mac, copy the php commands from the Composer download page and run in the terminal. Then copy the mv command and run in terminal. You can also install composer with Homebrew
 
-## Create a New Laravel Project With Composer
+## Testing the Project
+- Clone the repository
+- Run "composer install"
+- Setup the database using the steps in the "Database Setup" section below;
 
-Open a terminal in the htdocs folder. htdocs is where all of your local projects go.
+Note: Ensure you conclude the steps in the database setup before carrying out the following steps!
 
-htdocs folder location:
-- **Windows** - C:\Xampp\htdocs
-- **Mac** - /opt/lampp/htdocs
-
-```
-composer create-project --prefer-dist laravel/laravel laravel-rest-api
-```
-Go to the project directory using the following command
-```
-cd C:\Xampp\htdocs\laravel-rest-api
-```
-Use the following command to run laravel project and confirm everything works fine
+- Go to the project directory via the command line/terminal
+- Use the following command to run laravel project and confirm everything works fine
 ```
 php artisan serve
 ```
@@ -42,7 +35,12 @@ You should see the following message on the terminal
 
    Press Ctrl+C to stop the server
 ``` 
-Now visit http://127.0.0.1:8000 on your browser and confirm you see the laravel homepage.
+- Now visit http://127.0.0.1:8000 on your browser and confirm you can see the laravel homepage.
+- Go ahead to test the project on Postman.
+
+
+## Postman Collection
+https://documenter.getpostman.com/view/23777914/2s8YYLL2rq
 
 ## Database Setup
 Since we are making use of XAMPP, we would use the MySQL database installed with xampp.
@@ -91,6 +89,3 @@ SHOW TABLES;
 +------------------------+
 ```
 - Now we are all setup!
-
-## Postman Collection
-https://documenter.getpostman.com/view/23777914/2s8YYLL2rq
