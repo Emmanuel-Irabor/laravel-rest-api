@@ -1,4 +1,4 @@
-# laravel-rest-api
+# Estate Intel Back End Engineering Assessment
 This project shows how you can implement a REST API that calls an external API service to get information about books. Additionally, it shows how you will implement a simple CRUD (Create, Read, Update, Delete) API with MySQL local database.
 
 # Laravel Xampp Setup (Windows & Mac)
@@ -91,3 +91,6 @@ SHOW TABLES;
 +------------------------+
 ```
 - Now we are all setup!
+
+## Postman Collection
+https://documenter.getpostman.com/view/23777914/2s8YYLL2rq
