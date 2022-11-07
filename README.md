@@ -113,3 +113,11 @@ SHOW TABLES;
 +------------------------+
 ```
 - Now we are all setup!
+
+## Running tests
+One of the most important things about tests is obviously running them since you can create as many as you want, but you can’t test anything if it doesn’t work.
+
+Laravel makes it very easy for us to run our tests through the terminal. Keep in mind that you can only perform tests from the root of your project directory. You can run your tests by performing one of the following commands:
+```
+php artisan test
+```
