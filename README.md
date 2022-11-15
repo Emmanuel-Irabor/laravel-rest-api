@@ -22,10 +22,10 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 
-# Project: Estate Intel Back End Engineering Assessment 
+# Project: Books API
 This project shows how you can implement a REST API that calls an external API service to get information about books. Additionally, it shows how you will implement a simple CRUD (Create, Read, Update, Delete) API with MySQL local database.
 
-## Laravel Xampp Setup (Windows & Mac)
+## Xampp Setup (Windows & Mac)
 For this project we would be making use of xampp. XAMPP is a free and open-source cross-platform web server solution stack package developed by Apache Friends, consisting mainly of the Apache HTTP Server, MariaDB database, and interpreters for scripts written in the PHP and Perl programming languages.
 
 ## Install Xampp
